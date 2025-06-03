@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pregna Klinik</title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="st.css" /> -->
+
+    <!--İCONLAR -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="left-header">
+            <a href="/">
+              <img src="assets/images/log.png" alt="Pregna Logo" class="logo" />
+            </a>
+
+            <div class="header-hours">
+              <div class="time"><i class="ri-time-line"></i></div>
+              <div>
+                <h3 style="text-wrap: nowrap">
+                  Pazartesi - Cuma 09:00 - 18:00
+                </h3>
+                <h3>Cumartesi 09:00 - 14:00</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-icons">
+            <a style="text-wrap: nowrap" href="video-galeri.html"
+              >Video Galeri</a
+            >
+            <a href="bloglar.html">Blog</a>
+            <a href="sorulan-sorular.html">S.S.S</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="arama.html" class="search-toggle">
+              <i class="ri-checkbox-blank-circle-line"></i>
+            </a>
+          </div>
+
+          <!------------------------ HAMBURGER  ------------------------------>
+          <div class="mobile-btn">
+            <button type="button" class="bars">
+              <span style="color: #ef7daa; font-size: 37px"
+                ><i class="ri-menu-3-line"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobil-screen">
+          <div class="search-barr">
+            <input type="text" placeholder="Aramak için kelime giriniz.." />
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+
+        <div class="mobil-screen1">
+          <div class="mobile-nav-items">
+            <div class="nav-ite" onclick="toggleMobileMenu(this)">
+              <div class="nav-titlee">
+                Genital Estetik <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submen">
+                <a href="vajinaldaralma.html">Vajinal Daraltma</a>
+                <a href="vajinalicdudak.html">Vajinal İç Dudak Estetiği</a>
+                <a href="vajinaldıs.html">Vajinal Dış Dudak Estetiği</a>
+                <a href="vajinalkuru.html">Vajinal Kuruluk Tedaviler</a>
+                <a href="vajinalbeyaz.html">Vajinal Beyazlatma</a>
+                <a href="dogumyırtık.html">Doğum Yırtıklarının Onarılması</a>
+              </div>
+            </div>
+
+            <div class="nav-ite" onclick="toggleMobileMenu(this)">
+              <div class="nav-titlee">
+                İdrar Kaçırma <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submen">
+                <a href="pelviktaban.html">Pelvik Taban Rehabilitasyon</a>
+                <a href="lazeruygulama.html">Lazer Uygulamaları </a>
+                <a href="cerrahiuyg.html"> Cerrahi Uygulamalar</a>
+                <a href="vajinal-enfeksiyon.html">Vajinal Enfeksiyonlar</a>
+              </div>
+            </div>
+
+            <div class="nav-ite">
+              <a href="vajinal-enfeksiyon.html" class="nav-title"
+                >Vajinal Enfeksiyonlar</a
+              >
+            </div>
+
+            <div class="nav-ite" onclick="toggleMobileMenu(this)">
+              <div class="nav-titlee">
+                Tedavi Yöntemleri <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submen">
+                <a href="co2.html">CO2 Lazer Tedavileri</a>
+                <a href="dolgu.html">Dolgu Tedavileri</a>
+                <a href="yagenjek.html">Yağ Enjeksiyonu</a>
+                <a href="prp.html">PRP Uygulaması</a>
+                <a href="#">Peeling Uygulamaları</a>
+                <a href="#">Ekzozom Tedavileri</a>
+                <a href="#">Mezoterapi</a>
+              </div>
+            </div>
+
+            <div class="nav-ite">
+              <a href="#" class="nav-titlee">Pregna Klinik</a>
+            </div>
+          </div>
+
+          <div class="logo-botto">
+            <img src="assets/images/logo2.png" alt="" />
+          </div>
+
+          <div class="footer-lin">
+            <a href="video-galeri.html">Video Galeri</a>
+            <a href="bloglar.html">Blog</a>
+            <a href="sorulan-sorular.html">S.S.S</a>
+            <a href="iletisim.html">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <div class="container">
+        <div class="nav-item-container">
+          <div class="nav-item">
+            <div
+              style="font-weight: 600; font-size: 15px"
+              class="nav-title"
+              onclick="toggleMenu(this)"
+            >
+              Genital Estetik <i class="ri-arrow-down-s-line"></i>
+            </div>
+
+            <div class="submenu">
+              <a class="highlight" href="vajinaldaralma.html"
+                >Vajinal Daraltma</a
+              >
+              <a
+                href="vajinalicdudak.html
+            "
+                >Vajinal İç Dudak Estetiği</a
+              >
+              <a href="vajinaldıs.html">Vajinal Dış Dudak Estetiği</a>
+              <a href="vajinalkuru.html">Vajinal Kuruluk Tedaviler</a>
+              <a href="vajinalbeyaz.html">Vajinal Beyazlatma</a>
+              <a href="dogumyırtık.html">Doğum Yırtıklarının Onarılması</a>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div
+              style="font-weight: 600; font-size: 15px"
+              class="nav-title"
+              onclick="toggleMen(this)"
+            >
+              İdrar Kaçırma <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="submenu">
+              <a href="pelviktaban.html">Pelvik Taban Rehabilitasyon</a>
+              <a href="lazeruygulama.html">Lazer Uygulamaları</a>
+              <a href="cerrahiuyg.html">Cerrahi Uygulamalar</a>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a
+              style="font-weight: 600; font-size: 15px"
+              href="vajinal-enfeksiyon.html"
+              class="nav-title"
+            >
+              Vajinal Enfeksiyonlar
+            </a>
+          </div>
+
+          <div class="nav-item">
+            <div
+              style="font-weight: 600; font-size: 15px"
+              class="nav-title"
+              onclick="toggleMenu(this)"
+            >
+              Tedavi Yöntemleri <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="submenu">
+              <a href="co2.html">CO2 Lazer Tedavileri</a>
+              <a href="dolgu.html">Dolgu Tedavileri</a>
+              <a href="yagenjek.html">Yağ Enjeksiyonu</a>
+              <a href="prp.html">PRP Uygulaması</a>
+              <a href="pelviktaban.html">Pelvik Taban Rehabilitasyon</a>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a
+              style="font-weight: 600; font-size: 15px"
+              href="pregna.html"
+              class="nav-title"
+              >Pregna Klinik</a
+            >
+          </div>
+
+          <div class="nav-item">
+            <a href="omer-dai.html" class="logo2">
+              <img src="assets/images/logo2.png" alt="" />
+            </a>
+          </div>
+
+          <div class="nav-item">
+            <div class="contact-button">
+              <img src="./assets/images/phone.png" alt="" />
+              <span style="font-weight: 200">İletişime Geçin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hizmet-tema">
+      <div class="hizmet-detay">
+        <div class="detay-text">
+          <h1>Sıkça Sorulan Sorular</h1>
+          <p>
+            <a href="index.html">Anasayfa</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="sorulan-sorular.html">S.S.S</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="vd-alan">
+      <!-- <div class="container"> -->
+      <div class="left-section">
+        <div class="down-section">
+          <div class="sag-box-grup grup">
+            <div class="box lefft">
+              <h3>Genital Estetik Testi</h3>
+              <p class="text-p">
+                Ne tür bir genital estetik istiyorsunuz? Soruları cevaplayıp,
+                size uygun tedaviyi öğrenin.
+              </p>
+
+              <a href="test.html">
+                <button style="font-size: 15px">Testi Çöz</button>
+              </a>
+            </div>
+            <div class="box righht">
+              <h3>Randevu Oluştur</h3>
+              <p>Size en uygun zamanı birlikte belirleyelim!</p>
+              <a href="#">
+                <button style="font-size: 15px">Randevu Al</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="background">
+        <div class="sss-alan">
+          <div class="sss-text">
+            <h1>Sıkça Sorulan Sorular</h1>
+            <div class="sss-text1">
+              <h2>Ameliyatsız Lazer Vajinal Daraltma nasıl yapılır?</h2>
+              <p>
+                Özel lazer probu, 360 derece dönebilen vajinaya yerleştirilir.
+                Işık huzmesi, yeni kolajenin üretildiği dokuyu hedeflemek için
+                vajinal epitele nüfuz eder. Anestezi veya kesinti olmaksızın
+                neredeyse ağrısız bir işlemdir. Çoğu hasta, tedavinin Pap smear
+                yaptırmaktan daha rahat olduğunu bildirmektedir.
+              </p>
+            </div>
+
+            <div class="sss-text2">
+              <h2>
+                Vajinal gençleştirme prosedüründen sonra herhangi bir kesinti
+                var mı?
+              </h2>
+              <p>
+                Hastalar prosedürlerini takiben normal, günlük aktivitelerine
+                dönerler. Ancak 5 gün cinsel ilişkiden kaçınılmalıdır. Pazartesi
+                günü tedavi gören bir hasta Cuma akşamı seks yapabilir.
+              </p>
+            </div>
+
+            <div class="sss-text3">
+              <h2>
+                Lazerle Vajinal Daraltma için iyi bir aday olup olmadığımı nasıl
+                anlarım?
+              </h2>
+              <p>
+                Lazerle Vajinal Sıkılaştırma, pelvik gevşeme, vajinal prolapsus,
+                stres üriner inkontinans, endometrioz ve pelvik ağrı gibi diğer
+                vajinal sorunları olanlar da dahil olmak üzere çoğu kadın için
+                güvenlidir. Tedavinin olması için doğumdan sonra 3 ay beklenmesi
+                önerilir. Kadınlar, bir RİA dahil her türlü doğum kontrolünü
+                kullanabilir veya vajinal onarım veya histerektomi gibi daha
+                önce pelvik ameliyat geçirmiş olabilir.
+              </p>
+            </div>
+
+            <div class="sss-text4">
+              <h2>Ameliyatsız Lazer Vajinal Daraltma nasıl yapılır?</h2>
+              <p>
+                Özel lazer probu, 360 derece dönebilen vajinaya yerleştirilir.
+                Işık huzmesi, yeni kolajenin üretildiği dokuyu hedeflemek için
+                vajinal epitele nüfuz eder. Anestezi veya kesinti olmaksızın
+                neredeyse ağrısız bir işlemdir. Çoğu hasta, tedavinin Pap smear
+                yaptırmaktan daha rahat olduğunu bildirmektedir.
+              </p>
+            </div>
+
+            <div class="sss-text5">
+              <h2>
+                Vajinal gençleştirme prosedüründen sonra herhangi bir kesinti
+                var mı?
+              </h2>
+              <p>
+                Hastalar prosedürlerini takiben normal, günlük aktivitelerine
+                dönerler. Ancak 5 gün cinsel ilişkiden kaçınılmalıdır. Pazartesi
+                günü tedavi gören bir hasta Cuma akşamı seks yapabilir.
+              </p>
+            </div>
+
+            <div class="sss-text6">
+              <h2>
+                Lazerle Vajinal Daraltma için iyi bir aday olup olmadığımı nasıl
+                anlarım?
+              </h2>
+              <p>
+                Lazerle Vajinal Sıkılaştırma, pelvik gevşeme, vajinal prolapsus,
+                stres üriner inkontinans, endometrioz ve pelvik ağrı gibi diğer
+                vajinal sorunları olanlar da dahil olmak üzere çoğu kadın için
+                güvenlidir. Tedavinin olması için doğumdan sonra 3 ay beklenmesi
+                önerilir. Kadınlar, bir RİA dahil her türlü doğum kontrolünü
+                kullanabilir veya vajinal onarım veya histerektomi gibi daha
+                önce pelvik ameliyat geçirmiş olabilir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hizmet-footer">
+      <div class="footer-ust">
+        <div class="ust-dizayn">
+          <h2>Danışmak ister misiniz?</h2>
+          <h1>Sizi arayabiliriz.</h1>
+        </div>
+        <div class="ust-form">
+          <div class="input-box">
+            <input type="text" placeholder="Adınız Soyadınız" />
+            <span class="icon"><i class="ri-user-line"></i></span>
+          </div>
+          <div class="input-box">
+            <input type="tel" placeholder="Telefon Numaranız" />
+            <span class="icon"><i class="ri-phone-line"></i></span>
+          </div>
+          <button class="submit-btn">Sizi Arayalım</button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <img
+                style="margin-left: -1rem"
+                src="assets/images/log.png"
+                alt=""
+                class="one"
+              />
+              <img
+                style="margin-top: -1.4rem"
+                src="assets/images/logo2.png"
+                alt=""
+                class="two"
+              />
+            </div>
+            <div class="footer-top-right">
+              <div class="footer-phone">
+                <a href="tel:+90 342 606 03 80" target="_blank"
+                  >+90 342 606 03 80</a
+                >
+                <p style="padding-left: 1.8rem">Destek & Çağrı Hattı</p>
+              </div>
+              <div class="nav-item">
+                <div class="contact-button">
+                  <img src="./assets/images/phone.png" alt="" />
+                  <span style="font-weight: 200">İletişime Geçin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="footer-menu">
+              <div class="footer-nav-title">
+                <p>Genital Estetik</p>
+              </div>
+              <nav class="footer-nav">
+                <a href="#">Vajinal Daraltma</a>
+                <a href="#">Vajinal İç Dudak Estetiği</a>
+                <a href="#">Vajinal Dış Dudak Estetiği</a>
+                <a href="#">Vajinal Kuruluk Tedaviler</a>
+                <a href="#">Vajinal Beyazlatma</a>
+                <a href="#">Doğum Yırtıklarının Onarılması</a>
+              </nav>
+            </div>
+            <div class="footer-menu">
+              <div class="footer-nav-title">
+                <p>İdrar Kaçırma</p>
+              </div>
+              <nav class="footer-nav">
+                <a href="#">Pelvik Taban Rehabilitasyon</a>
+                <a href="#">Lazer Uygulamaları </a>
+                <a href="#"> Cerrahi Uygulamalar</a>
+                <a href="#">Vajinal Enfeksiyonlar</a>
+              </nav>
+            </div>
+            <div class="footer-menu">
+              <div class="footer-nav-title">
+                <p>Tedavi Yöntemleri</p>
+              </div>
+              <nav class="footer-nav">
+                <a href="#">CO2 Lazer Tedavileri</a>
+                <a href="#">Dolgu Tedavileri</a>
+                <a href="#">Yağ Enjeksiyonu</a>
+                <a href="#">PRP Uygulaması</a>
+                <a href="#">Peeling Uygulamaları</a>
+                <a href="#">Ekzozom Tedavileri</a>
+                <a href="#">Mezoterapi</a>
+              </nav>
+            </div>
+            <div class="footer-card">
+              <img src="/assets/images/time.png" alt="" />
+              <p>Çalışma Saatleri</p>
+              <div>
+                <span>Pazartesi - Cuma 09:00 - 18:00</span>
+                <span>Cumartesi 09:00 - 14:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-contact-content">
+              <div class="footer-contact-item">
+                <img src="assets/images/map.png" alt="" />
+                <p style="width: 280px; max-width: 100%">
+                  Gazi Mah. Ali Nadi Ünler Bulvarı 24002 Nolu Sokak No 2/A
+                  Şehitkamil / Gaziantep
+                </p>
+              </div>
+              <div class="footer-contact-item">
+                <img src="assets/images/mail.png" alt="" />
+                <p>doktor@dromerdai.com</p>
+              </div>
+            </div>
+            <nav class="social-medias">
+              <a href="#" target="_blank" class="social-media">
+                <img src="assets/images/facebook.png" alt="" />
+              </a>
+              <a href="#" target="_blank" class="social-media">
+                <img src="assets/images/instagram.png" alt="" />
+              </a>
+              <a href="#" target="_blank" class="social-media">
+                <img src="assets/images/twitter.png" alt="" />
+              </a>
+              <a href="#" target="_blank" class="social-media">
+                <img src="assets/images/linkedin.png" alt="" />
+              </a>
+            </nav>
+          </div>
+          <div class="footer-copyright">
+            <p>© 2025 Pregna Klinik. All Rights Reserved.</p>
+            <p>Design and Creation by Taaf Medya</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

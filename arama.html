@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pregna Klinik</title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="st.css" /> -->
+
+    <!--İCONLAR -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="left-header">
+            <a href="/">
+              <img src="assets/images/log.png" alt="Pregna Logo" class="logo" />
+            </a>
+
+            <div class="header-hours">
+              <div class="time"><i class="ri-time-line"></i></div>
+              <div>
+                <h3 style="text-wrap: nowrap">
+                  Pazartesi - Cuma 09:00 - 18:00
+                </h3>
+                <h3>Cumartesi 09:00 - 14:00</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-icons">
+            <a style="text-wrap: nowrap" href="video-galeri.html"
+              >Video Galeri</a
+            >
+            <a href="bloglar.html">Blog</a>
+            <a href="sorulan-sorular.html">S.S.S</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="arama.html" class="search-toggle">
+              <i class="ri-checkbox-blank-circle-line"></i>
+            </a>
+          </div>
+
+          <!------------------------ HAMBURGER  ------------------------------>
+          <div class="mobile-btn">
+            <button type="button" class="bars">
+              <span style="color: #ef7daa; font-size: 37px"
+                ><i class="ri-menu-3-line"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobil-screen">
+          <div class="search-barr">
+            <input type="text" placeholder="Aramak için kelime giriniz.." />
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+
+        <div class="mobil-screen1">
+          <div class="mobile-nav-items">
+            <div class="nav-ite" onclick="toggleMobileMenu(this)">
+              <div class="nav-titlee">
+                Genital Estetik <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submen">
+                <a href="vajinaldaralma.html">Vajinal Daraltma</a>
+                <a href="vajinalicdudak.html">Vajinal İç Dudak Estetiği</a>
+                <a href="vajinaldıs.html">Vajinal Dış Dudak Estetiği</a>
+                <a href="vajinalkuru.html">Vajinal Kuruluk Tedaviler</a>
+                <a href="vajinalbeyaz.html">Vajinal Beyazlatma</a>
+                <a href="dogumyırtık.html">Doğum Yırtıklarının Onarılması</a>
+              </div>
+            </div>
+
+            <div class="nav-ite" onclick="toggleMobileMenu(this)">
+              <div class="nav-titlee">
+                İdrar Kaçırma <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submen">
+                <a href="pelviktaban.html">Pelvik Taban Rehabilitasyon</a>
+                <a href="lazeruygulama.html">Lazer Uygulamaları </a>
+                <a href="cerrahiuyg.html"> Cerrahi Uygulamalar</a>
+                <a href="vajinal-enfeksiyon.html">Vajinal Enfeksiyonlar</a>
+              </div>
+            </div>
+
+            <div class="nav-ite">
+              <a href="vajinal-enfeksiyon.html" class="nav-title"
+                >Vajinal Enfeksiyonlar</a
+              >
+            </div>
+
+            <div class="nav-ite" onclick="toggleMobileMenu(this)">
+              <div class="nav-titlee">
+                Tedavi Yöntemleri <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submen">
+                <a href="co2.html">CO2 Lazer Tedavileri</a>
+                <a href="dolgu.html">Dolgu Tedavileri</a>
+                <a href="yagenjek.html">Yağ Enjeksiyonu</a>
+                <a href="prp.html">PRP Uygulaması</a>
+                <a href="#">Peeling Uygulamaları</a>
+                <a href="#">Ekzozom Tedavileri</a>
+                <a href="#">Mezoterapi</a>
+              </div>
+            </div>
+
+            <div class="nav-ite">
+              <a href="#" class="nav-titlee">Pregna Klinik</a>
+            </div>
+          </div>
+
+          <div class="logo-botto">
+            <img src="assets/images/logo2.png" alt="" />
+          </div>
+
+          <div class="footer-lin">
+            <a href="video-galeri.html">Video Galeri</a>
+            <a href="bloglar.html">Blog</a>
+            <a href="sorulan-sorular.html">S.S.S</a>
+            <a href="iletisim.html">İletişim</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="background">
+      <nav class="main-nav">
+        <div class="container">
+          <div class="nav-item-container">
+            <div class="nav-item">
+              <div
+                style="font-weight: 600; font-size: 15px"
+                class="nav-title"
+                onclick="toggleMenu(this)"
+              >
+                Genital Estetik <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <div class="submenu">
+                <a class="highlight" href="vajinaldaralma.html"
+                  >Vajinal Daraltma</a
+                >
+                <a
+                  href="vajinalicdudak.html
+            "
+                  >Vajinal İç Dudak Estetiği</a
+                >
+                <a href="vajinaldıs.html">Vajinal Dış Dudak Estetiği</a>
+                <a href="vajinalkuru.html">Vajinal Kuruluk Tedaviler</a>
+                <a href="vajinalbeyaz.html">Vajinal Beyazlatma</a>
+                <a href="dogumyırtık.html">Doğum Yırtıklarının Onarılması</a>
+              </div>
+            </div>
+
+            <div class="nav-item">
+              <div
+                style="font-weight: 600; font-size: 15px"
+                class="nav-title"
+                onclick="toggleMen(this)"
+              >
+                İdrar Kaçırma <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submenu">
+                <a href="pelviktaban.html">Pelvik Taban Rehabilitasyon</a>
+                <a href="lazeruygulama.html">Lazer Uygulamaları</a>
+                <a href="cerrahiuyg.html">Cerrahi Uygulamalar</a>
+              </div>
+            </div>
+
+            <div class="nav-item">
+              <a
+                style="font-weight: 600; font-size: 15px"
+                href="vajinal-enfeksiyon.html"
+                class="nav-title"
+              >
+                Vajinal Enfeksiyonlar
+              </a>
+            </div>
+
+            <div class="nav-item">
+              <div
+                style="font-weight: 600; font-size: 15px"
+                class="nav-title"
+                onclick="toggleMenu(this)"
+              >
+                Tedavi Yöntemleri <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="submenu">
+                <a href="co2.html">CO2 Lazer Tedavileri</a>
+                <a href="dolgu.html">Dolgu Tedavileri</a>
+                <a href="yagenjek.html">Yağ Enjeksiyonu</a>
+                <a href="prp.html">PRP Uygulaması</a>
+                <a href="pelviktaban.html">Pelvik Taban Rehabilitasyon</a>
+              </div>
+            </div>
+
+            <div class="nav-item">
+              <a
+                style="font-weight: 600; font-size: 15px"
+                href="pregna.html"
+                class="nav-title"
+                >Pregna Klinik</a
+              >
+            </div>
+
+            <div class="nav-item">
+              <a href="omer-dai.html" class="logo2">
+                <img src="assets/images/logo2.png" alt="" />
+              </a>
+            </div>
+
+            <div class="nav-item">
+              <div class="contact-button">
+                <img src="./assets/images/phone.png" alt="" />
+                <span style="font-weight: 200">İletişime Geçin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hizmet-tema">
+        <div class="hizmet-detay">
+          <div class="detay-text">
+            <h1>Arama</h1>
+            <p>
+              <a href="index.html">Anasayfa</a>
+              <i class="ri-arrow-right-s-line"></i>
+              <a href="arama.html">Arama</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+ 
+<div class="background">
+  <div class="arama-alan">
+    <div class="search-section">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Aramak için kelime giriniz.."
+      />
+      <span class="search-icon"><i class="ri-search-line"></i> </span>
+    </div>
+  </div>
+  
+  <!-- Düzeltilmiş tabs section -->
+  <div class="tabs">
+    <button class="tab " data-category="hizmetler">
+      Hizmetler <span class="count-circle">1</span>
+    </button>
+    <button class="tab active" data-category="bloglar">
+      Bloglar <span class="count-circle">3</span>
+    </button>
+    <button class="tab" data-category="diger">
+      Diger<span class="count-circle">4</span>
+    </button>
+  </div>
+  
+
+<div class="hizmet1-kutu-grup1">
+  <a href="vajinaldaralma.html" class="main-box1">
+    <h2>Genital Estetik</h2>
+    <p>
+      Uygulama sonrası iyileşme sürecini takiben hayatınızdaki değişimleri farkedeceksiniz.
+    </p>
+    <div class="discover-btn1">
+      <p>Şimdi keşfet</p>
+      <i  class="ri-arrow-right-line"></i>
+    </div>
+  </a>
+  <a href="pelviktaban.html" class="main-box1">
+    <h2>İdrar Kaçırma</h2>
+    <p>
+      Uygulama sonrası iyileşme sürecini takiben hayatınızdaki değişimleri farkedeceksiniz.
+    </p>
+    <div class="discover-btn1">
+      <p>Şimdi keşfet</p>
+      <i class="ri-arrow-right-line"></i>
+    </div>
+  </a>
+  <a href="vajinal-enfeksiyon.html" class="main-box1">
+    <h2>Vajinal Enfeksiyonlar</h2>
+    <p>
+      Uygulama sonrası iyileşme sürecini takiben hayatınızdaki değişimleri farkedeceksiniz.
+    </p>
+    <div class="discover-btn1">
+      <p>Şimdi keşfet</p>
+      <i class="ri-arrow-right-line"></i>
+    </div>
+  </a>
+  <a href="co2.html" class="main-box1">
+    <h2>Tedavi Yöntemleri</h2>
+    <p>
+      Uygulama sonrası iyileşme sürecini takiben hayatınızdaki değişimleri farkedeceksiniz.
+    </p>
+    <div class="discover-btn1">
+      <p>Şimdi keşfet</p>
+      <i class="ri-arrow-right-line"></i>
+    </div>
+  </a>
+</div>
+
+        <div class="blog1-kutu-grup1">
+        <a href="dugumsonrasi.html" class="blog-card">
+          <img src="assets/images/blog1.png" alt="Mesane Kontrolü" />
+          <figcaption>9 Nisan 2025</figcaption>
+          <p>Mesane Kontrolünüzde<br />Sorun mu Yaşıyorsunuz?</p>
+        </a>
+        <a href="dugumsonrasi.html" class="blog-card">
+          <img src="assets/images/blog2.png" alt="Genital Rehabilitasyon" />
+          <figcaption>9 Nisan 2025</figcaption>
+          <p>Doğum Sonrası<br />Genital Rehabilitasyon</p>
+        </a>
+        <a href="dugumsonrasi.html" v class="blog-card">
+          <img src="assets/images/blog3.png" alt="Genital Estetik Türleri" />
+          <figcaption>9 Nisan 2025</figcaption>
+          <p>Ne tür bir genital<br />Estetik İstiyorsunuz?</p>
+        </a>
+      </div>
+
+      <div id="no-results" style="display:none; text-align:center;">Sonuç bulunamadı.</div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

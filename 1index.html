@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arama Filtresi</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+
+    #searchInput {
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .card-lists {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .card {
+      padding: 1rem;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Başta kartları gizli tut */
+    .hizmet-box,
+    .blog-box {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="searchInput" placeholder="Ne arıyorsunuz? (örnek: hizmet, blog)"/>
+
+  <div class="card-lists">
+    <a href="#" class="card hizmet-box">
+      <h3>Hizmet 1</h3>
+      <p>Detaylar</p>
+    </a>
+    <a href="#" class="card hizmet-box">
+      <h3>Hizmet 2</h3>
+      <p>Detaylar</p>
+    </a>
+    <a href="#" class="card blog-box">
+      <h3>Blog 1</h3>
+      <p>İçerik</p>
+    </a>
+    <a href="#" class="card blog-box">
+      <h3>Blog 2</h3>
+      <p>İçerik</p>
+    </a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const hizmetCards = document.querySelectorAll(".hizmet-box");
+    const blogCards = document.querySelectorAll(".blog-box");
+
+    searchInput.addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase().trim();
+
+      if (searchTerm.includes("hizmet")) {
+        hizmetCards.forEach(card => card.style.display = "block");
+        blogCards.forEach(card => card.style.display = "none");
+      } else if (searchTerm.includes("blog")) {
+        blogCards.forEach(card => card.style.display = "block");
+        hizmetCards.forEach(card => card.style.display = "none");
+      } else {
+        blogCards.forEach(card => card.style.display = "none");
+        hizmetCards.forEach(card => card.style.display = "none");
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+  </body>
+</html>
